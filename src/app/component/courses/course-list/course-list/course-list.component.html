@@ -1,0 +1,40 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="card">
+            <div class="card-header px-0 d-flex justify-content-between align-items-center bg-transparent">
+              
+                    <h5 class="card-title mb-0">ALL Users</h5>  
+
+                    <button class="btn btn-sm btn-primary " type="button" (click)="addCourse()">Add Course</button>
+              
+            </div>
+            <div class="card-body px-0">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table table-bordered table-hover">
+                          <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Course</th>
+                                <th>Desc</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let user of allUser">
+                                <td>{{user.id}}</td>
+                                <td>{{user.coursename}}</td>
+                                <td>{{user.desc}}</td>
+                                <td>{{user.price}}</td>
+                                <td><button type="button" class="btn btn-md btn-primary btn-sm" (click)="edit(user.id)">Edit</button>  
+                                <button type="button" class="btn btn-md btn-danger btn-sm ms-1" (click)="delete(user.id)">Delete</button></td>
+                            </tr>
+                          </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

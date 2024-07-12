@@ -1,0 +1,54 @@
+
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+<h5 class="card-title">
+    Add Course
+</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form class="" [formGroup]="courseFormModel" (ngSubmit)="register()">
+                              
+                                <div class="mb-2">
+                                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example1c">Course Name</label>
+                                    <input type="text" id="form3Example1c" class="form-control"
+                                      formControlName="coursename" />
+                                  </div>
+                                </div>
+              
+                                <div class=" mb-4">
+                                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example3c">Desc</label>
+                                    <input type="text" id="form3Example3c" class="form-control"
+                                      formControlName="desc" />
+                                  </div>
+                                </div>
+              
+                                <div class=" mb-4">
+                                 
+                                  <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                    <label class="form-label" for="form3Example4c">Price</label>
+                                    <input type="text" id="form3Example4c" class="form-control"
+                                      formControlName="price" />
+                                  </div>
+                                </div>
+              
+                    
+              
+                          <div class="d-flex justify-content-center">
+                                  <button  type="submit"  class="btn btn-primary btn-block w-100 btn-sm">Add Course</button>
+                                </div>
+              
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
